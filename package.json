@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev",
+    "start:production": "npm run -s serve",
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },

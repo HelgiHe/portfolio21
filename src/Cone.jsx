@@ -7,9 +7,9 @@ const Cone = (props) => {
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
   // Rotate mesh every frame, this is outside of React without overhead
-  useFrame((state, delta) => (mesh.current.rotation.x += 0.005))
-  useFrame((state, delta) => (mesh.current.rotation.y += 0.05))
-  useFrame((state, delta) => (mesh.current.rotation.z += 0.002))
+  useFrame((state, delta) => (mesh.current.rotation.x += 0.001))
+  useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
+  useFrame((state, delta) => (mesh.current.rotation.z += 0.001))
 
 
   // Return view, these are regular threejs elements expressed in JSX
